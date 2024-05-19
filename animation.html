@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* to use animation we use keyframes the give a name to it . eg. Here @keyframes sliding {} */
         @keyframes sliding {
+
+            /* starting stat 0% */
             0% {
                 background-color: yellow;
                 left: 0;
                 top: 0;
             }
 
+            /* 1/4 stat */
             25% {
                 top: 225px;
+                /* top means when the ball hits top */
                 background-color: red;
                 transform: scale(.5);
 
@@ -23,6 +28,7 @@
             50% {
                 top: 0;
                 background-color: crimson;
+                /* transform the scale fo the ball */
                 transform: scale(1);
 
             }
@@ -30,6 +36,7 @@
             75% {
                 top: 225px;
                 transform: scale(.5);
+                /* transform the ball into smaller .5 times */
             }
 
             100% {
@@ -50,10 +57,12 @@
             height: 100px;
             background-color: crimson;
             border-radius: 50%;
-            /* animation: name(What You want to animate) duration(How long) timing function(Ease in/Ease out/Linear) delay iteration count(times / infinite) direction(alternate) fill-mode(ager ta rakhbe ki nai); */
+            /* animation: name(What You want to animate) duration(How long) timing function(Ease in/Ease out/Linear) delay ((animation delay) iteration count(times / infinite) direction(alternate) fill-mode(ager ta rakhbe ki nai); */
             animation: sliding 2s ease-in-out .5s infinite alternate;
             animation-play-state: running;
+            /* animation-play-state means when the animation will run */
             position: relative;
+            /* position relative is used to move the postion of the divs or stuff . we after relative we must point it out where it will move */
 
         }
     </style>
