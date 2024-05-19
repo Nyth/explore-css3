@@ -28,9 +28,20 @@
         }
 
         .short-text {
+            /* it wraps the space and minimum size */
             white-space: nowrap;
             overflow: hidden;
+            /* if text too long , we may use ellipsis */
             text-overflow: ellipsis;
+        }
+
+        .container {
+            border: 2px solid crimson;
+            display: inline-block;
+            min-width: 400px;
+            max-width: 800px;
+            min-height: 200px;
+            max-height: 700px;
         }
     </style>
 </head>
@@ -95,6 +106,14 @@
         exercitationem dolores asperiores dolor! Odit dolore, laborum rerum ipsam a dolorem corrupti sint accusantium
         fugiat? Repellendus magnam dignissimos nisi perspiciatis ab nam quis illum quibusdam, quae amet.
     </div>
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et atque laborum odio saepe nihil. Corrupti ipsam
+            odio tempora omnis illum culpa officiis aliquid rerum explicabo. Ullam, earum! Officiis, blanditiis quo!
+            Obcaecati delectus beatae autem nobis dignissimos a incidunt, odit veniam culpa. Totam ab quidem ipsam non
+            quas possimus rerum quis, minima laudantium labore, qui quo perspiciatis facilis quos. Eos cum ipsam
+            doloremque facere sed corporis commodi aspernatur! Quasi, blanditiis sed?</p>
+    </div>
+    <!-- <span class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, omnis.</span> -->
 
 </body>
 
